@@ -1,7 +1,7 @@
 ﻿using Brambillator.Infrastructure.Domain.Models;
-using Historiarum.Data.Lookups;
+using Brambillator.Historiarum.Domain.Lookups;
 
-namespace Historiarum.Data.Model
+namespace Brambillator.Historiarum.Domain.Model
 {
     /// <summary>
     /// Media that can be related to a Momentum/Mark

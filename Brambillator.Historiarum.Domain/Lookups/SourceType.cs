@@ -1,4 +1,4 @@
-﻿namespace Historiarum.Data.Lookups
+﻿namespace Brambillator.Historiarum.Domain.Lookups
 {
     /// <summary>
     /// Indicates the type of source for a given Momentum.

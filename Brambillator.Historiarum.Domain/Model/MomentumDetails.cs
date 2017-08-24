@@ -1,6 +1,6 @@
 ﻿using Brambillator.Infrastructure.Domain.Models;
 
-namespace Historiarum.Data.Model
+namespace Brambillator.Historiarum.Domain.Model
 {
     public class MomentumDetail : Entity
     {

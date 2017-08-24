@@ -5,7 +5,7 @@ namespace Brambillator.Historiarum.Domain.UnitOfWork
 {
     public interface IHistoriarumUnitOfWork
     {
-        IRepository<Momentum> Momentum { get; }
+        IRepository<Momentum> MomentumRepository { get; }
 
         void Commit();
     }

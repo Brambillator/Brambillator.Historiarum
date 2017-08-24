@@ -1,5 +1,5 @@
 ﻿using Brambillator.Infrastructure.Domain.Models;
-using Historiarum.Data.Lookups;
+using Brambillator.Historiarum.Domain.Lookups;
 using System;
 
 namespace Brambillator.Historiarum.Domain.Model

@@ -1,4 +1,4 @@
-﻿namespace Historiarum.Data.Lookups
+﻿namespace Brambillator.Historiarum.Domain.Lookups
 {
     public enum PathType : byte
     {

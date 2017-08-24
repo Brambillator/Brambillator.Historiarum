@@ -1,9 +1,8 @@
-﻿using Brambillator.CulturedMedia.Domain.UnitOfWork;
-using Brambillator.CulturedMedia.Domain.Views;
+﻿using Brambillator.CulturedMedia.Domain.Views;
 using Brambillator.CulturedMedia.Service;
+using Brambillator.Historiarum.Domain.Lookups;
 using Brambillator.Historiarum.Domain.Model;
 using Brambillator.Historiarum.Domain.UnitOfWork;
-using Historiarum.Data.Lookups;
 using System.Collections.Generic;
 
 namespace Brambillator.Historiarum.Service
@@ -42,7 +41,7 @@ namespace Brambillator.Historiarum.Service
             newMomentum.Resources = resourceList;
 
             //newMomentum.State = Infrastructure.Domain.Models.EntityState.Added;
-            _unitOfWork.Momentum.Add(newMomentum);
+            _unitOfWork.MomentumRepository.Add(newMomentum);
             _unitOfWork.Commit();
         }
     }
