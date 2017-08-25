@@ -42,10 +42,5 @@ namespace Brambillator.Historiarum.Domain.Model
         /// </summary>
         public virtual IEnumerable<MomentumResource> Resources { get; set; }
 
-        /// <summary>
-        /// System where this information was first entered
-        /// </summary>
-        public virtual System SourceSystem { get; set; }
-
     }
 }

@@ -22,20 +22,19 @@ namespace Brambillator.Historiarum.Service
             _resourceService = resourceService;
         }
 
-        public void CreateMomentum(string cultureName, Domain.Model.System system, SourceType sourceType, MomentumType momentumType, ExtendedDate tempus, IList<Resource> resources)
+        public void CreateMomentum(string cultureName, SourceType sourceType, MomentumType momentumType, ExtendedDate tempus, string[] resourceKeys)
         {
             Momentum newMomentum = new Momentum();
             newMomentum.SourceType = sourceType;
             newMomentum.Tempus = tempus;
             newMomentum.Type = momentumType;
-            newMomentum.SourceSystem = system;
             //newMomentum.Resources = resources;
 
             List<MomentumResource> resourceList = new List<MomentumResource>();
-            foreach (Resource res in resources)
+            foreach (string key in resourceKeys)
             {
                 //_resourceService.CreateOrUpdate()
-                resourceList.Add(new  MomentumResource() { CulturedMediaKey = res.Key });
+                resourceList.Add(new  MomentumResource() { CulturedMediaKey = key });
             }
 
             newMomentum.Resources = resourceList;

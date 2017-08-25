@@ -9,7 +9,12 @@ namespace Brambillator.Historiarum.Domain.Model
     public class System : Entity
     {
         /// <summary>
-        /// System name
+        /// Unique identifier.
+        /// </summary>
+        public string Key { get; set; }
+        
+        /// <summary>
+        /// System name.
         /// </summary>
         public string Name { get; set; }
     }
